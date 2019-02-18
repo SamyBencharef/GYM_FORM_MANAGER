@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="450.0" prefWidth="200.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymformmanager.controller.controllerMenu">
+   <children>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#chargerAjouterMembre" prefHeight="400.0" prefWidth="203.0" styleClass="toolbar-button" text="Ajouter un membre">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_PLUS" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#chargerAjouterSport" prefHeight="400.0" prefWidth="203.0" styleClass="toolbar-button" text="Ajouter un sport">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/add_sport_3_photoshop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#chargerListMembre" prefHeight="400.0" prefWidth="203.0" styleClass="toolbar-button" text="Listes des membres">
+         <graphic>
+            <FontAwesomeIconView glyphName="USERS" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="84.0" mnemonicParsing="false" onAction="#chargerListSport" prefHeight="400.0" prefWidth="203.0" styleClass="toolbar-button" text="Listes des sports">
+         <graphic>
+            <FontAwesomeIconView glyphName="TABLE" size="25" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="232.0" mnemonicParsing="false" onAction="#chargerParametre" prefHeight="400.0" prefWidth="203.0" styleClass="toolbar-button" text="Paramètres">
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="25" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

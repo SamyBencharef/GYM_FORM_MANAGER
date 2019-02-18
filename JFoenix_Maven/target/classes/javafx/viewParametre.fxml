@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="627.0" prefWidth="482.0" styleClass="custom-pane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymformmanager.controller.controllerParametre">
+   <children>
+      <VBox alignment="CENTER" prefHeight="663.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Changer les parametres de connexions" textFill="#9c0000">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="ancienUsername" focusColor="#ff5131" labelFloat="true" prefHeight="60.0" prefWidth="369.0" promptText="Ancien username">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="ancienPassword" focusColor="#ff5131" labelFloat="true" prefHeight="60.0" prefWidth="369.0" promptText="Ancien mot de passe">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXTextField fx:id="newUsername" focusColor="#ff5131" labelFloat="true" prefHeight="60.0" prefWidth="369.0" promptText="Nouveau username">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="newPassword" focusColor="#ff5131" labelFloat="true" prefHeight="60.0" prefWidth="369.0" promptText="Nouveau mot de passe">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="newPasswordRepeat" focusColor="#ff5131" labelFloat="true" prefHeight="60.0" prefWidth="369.0" promptText="Répetez le nouveau mot de passe">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="40.0" right="40.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <Text fx:id="passwordRepeatOk" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="293.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton onAction="#modifierParamettre" prefHeight="50.0" prefWidth="100.0" styleClass="login-button" stylesheets="@../style/style.css" text="Valider">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#annulerAjoutSport" prefHeight="50.0" prefWidth="100.0" styleClass="login-button" stylesheets="@../style/style.css" text="Annuler">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="40.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

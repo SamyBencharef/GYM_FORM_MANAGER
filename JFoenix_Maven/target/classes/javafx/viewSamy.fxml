@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="247.0" prefWidth="525.0" styleClass="custom-pane" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymformmanager.controller.controllerSamy">
+    <children>
+        <ImageView fitHeight="171.0" fitWidth="170.0" layoutX="34.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/web_hi_res_512.png" />
+            </image>
+        </ImageView>
+        <Text fontSmoothingType="LCD" layoutX="197.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="about-text" text="Contactez moi !" textAlignment="CENTER">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Text>
+        <VBox layoutX="218.0" layoutY="48.0" spacing="5.0">
+            <children>
+                <JFXButton onAction="#loadGitHub" prefHeight="40.0" prefWidth="269.0" styleClass="login-button" text="GitHub" />
+                <JFXButton onAction="#loadLinkedIN" prefHeight="40.0" prefWidth="269.0" styleClass="login-button" text="Linked In" />
+                <JFXButton onAction="#loadMailInterface" prefHeight="40.0" prefWidth="269.0" styleClass="login-button" text="samybencharef@gmail.com" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

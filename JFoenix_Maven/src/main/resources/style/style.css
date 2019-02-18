@@ -1,0 +1,349 @@
+
+* {                              /* Dracula */
+    -fx-primary : #F2F2F2;       /* #262526 */
+    -fx-primaryminus: #404040;   /* #404040 */
+    -fx-secondary : #F60A20;     /* #F60A20 */
+    -fx-primarytext: #262526;    /* #F2F2F2 */
+
+    -fx-color-1:#F60A20;
+    -fx-violet: #9B33FF;
+    -fx-bleu: #F60A20;
+}
+
+.root{
+    -fx-background-color:  -fx-primary;
+}
+
+
+.glyph-icon{
+    -fx-fill: -fx-primarytext;
+}
+
+
+/* Tous types de buttons*/
+.redbutton{
+    -fx-text-fill: -fx-primary ;
+    -fx-background-color: -fx-secondary;
+    -fx-border-color: -fx-secondary;
+}
+.redbutton:hover{
+    -fx-text-fill: -fx-primarytext ;
+    -fx-background-color: derive(-fx-secondary, -20%);
+}
+
+.login-button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+
+.login-button:hover, .login-button:focused{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+
+.text-field{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size : 12pt;
+    -jfx-focus-color: -fx-secondary;
+}
+
+
+
+/* Css de la partie d'Accueil*/
+
+/* Style de l'accueil */
+
+/* TablPane style*/
+.tab{
+    -fx-background-color: -fx-primary;
+    -fx-pref-width: 300;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 10pt;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.jfx-tab-pane .tab-selected-line{
+    -fx-background-color: -fx-secondary;
+}
+
+.jfx-tab-pane .jfx-rippler{
+    -jfx-rippler-fill: -fx-secondary;
+}
+
+
+/*Menu Bar style*/
+.menu-bar{
+    -fx-font-size: 14;
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.menu:hover{
+    -fx-background-color: -fx-secondary;
+}
+
+.context-menu{
+    -fx-background-color:  derive(-fx-primary, -20%);
+}
+
+.menu-item:hover{
+    -fx-background-color: -fx-secondary;
+}
+
+
+/*Hamburger style*/
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+.jfx-hamburger-icon StackPane{
+    -fx-background-color: -fx-secondary  ;
+    -fx-background-radius: 5px;
+}
+
+
+
+
+/* Menu bar style*/
+.toolbar-button{
+    -fx-border-color: transparent;
+    -fx-background-color: derive(-fx-primary, -10%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.toolbar-button:hover{
+    -fx-background-color: -fx-secondary ;
+    -fx-text-fill: -fx-primary;
+}
+
+.toolbar-button:hover .glyph-icon, .toolbar-button:hover .glyph-icon
+{
+    -fx-fill: -fx-primary;
+}
+
+
+/* Style du text */
+.main-text{
+    -fx-fill: -fx-secondary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+
+/* Style des ComboBox */
+.jfx-combobox{
+    -fx-text-fill:-fx-primarytext ;
+}
+
+.combo-box .cell{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font: 15px;
+}
+
+
+/* Style de la POP-UP*/
+.message-button{
+    -fx-border-color: -fx-color-1;
+    -fx-text-fill: black;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 3px;
+}
+
+.message-button:hover{
+    -fx-background-color: -fx-color-1;
+    -fx-border-color: derive(-fx-color-1, -20%);
+    -fx-text-fill: black;
+}
+
+.jfx-layout-actions
+{
+    -fx-hgap:8;
+}
+
+
+/* Fenêtre Samy*/
+.about-text{
+    -fx-fill: -fx-secondary;
+}
+
+
+/*Arrière de la fenetre de paramètre*/
+.custom-pane{
+    -fx-background-color: derive(-fx-primary, -5%);
+}
+
+
+/* Les tableaux - Gros Morceau*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, -10%);
+    -fx-font-size: 16px;
+    -fx-border-color: derive(-fx-secondary, 60%);
+}
+.table-view:focused{
+    -fx-background-color: derive(-fx-primary, -20%);
+}
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primary;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, -10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, -60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}
+
+.table-view .button{
+    -fx-border-color: -fx-secondary  ;
+    -fx-border-radius:  20px;
+    -fx-background-radius: 20px;
+}
+.table-view .button:hover {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primarytext;
+}
+
+
+/* JFXDialo styleee*/
+.jfx-layout-heading
+{
+    -fx-background-color: -fx-color-1;
+}
+.jfx-layout-heading .label
+{
+    -fx-text-fill: black; /*white si Drakula*/
+    -fx-font-size: 12pt;
+}
+.jfx-layout-body, .jfx-layout-actions{
+    -fx-background-color: -fx-primary;
+}
+.jfx-layout-body .label
+{
+    -fx-text-fill: black;  /*white si Drakula*/
+    -fx-padding: 20px 0 0 0;
+}
+
+/* Styles des alertes*/
+.custom-alert{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.custom-alert > *.button-bar > *.container{
+    -fx-background-color: -fx-primary;
+}
+.custom-alert > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.custom-alert *.header-panel{
+    -fx-background-color: -fx-blue;
+}
+.custom-alert .header-panel .label {
+    -fx-font-style: normal;
+    -fx-text-fill: black; /*white si Drakula*/
+}
+.custom-alert *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-fill: -fx-primary;
+}
+
+
+/* S'il y a une mauvaise idientification*/
+.mauvais-indentifiants{
+    -jfx-unfocus-color: -fx-violet;
+    -jfx-focus-color : -fx-violet;
+}
+
+
+/*Style des checkbox*/
+.checkbox-main{
+    -fx-text-fill: -fx-primarytext;
+    -jfx-checked-color: -fx-secondary;
+    -fx-font-size: 10pt;
+}
+
+
+/* Style du contour de la fenêtre*//*
+.jfx-decorator {
+    -fx-decorator-color: -fx-primary;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-primary;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 4 4 4;
+}
+*/

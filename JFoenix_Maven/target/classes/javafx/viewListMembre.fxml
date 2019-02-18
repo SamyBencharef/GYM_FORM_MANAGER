@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="rootPane" prefHeight="471.0" prefWidth="1320.0" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymformmanager.controller.controllerListMembre">
+    <children>
+      <BorderPane prefHeight="400.0" prefWidth="1139.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+              <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1139.0" BorderPane.alignment="CENTER">
+                  <columns>
+                      <TableColumn fx:id="nomCol" prefWidth="89.0" text="Nom" />
+                      <TableColumn fx:id="prenomCol" prefWidth="103.0" text="Prénom" />
+                  <TableColumn fx:id="genreCol" prefWidth="63.0" text="Genre" />
+                  <TableColumn fx:id="dtnCol" prefWidth="155.0" text="Date de naissance" />
+                      <TableColumn fx:id="emailCol" prefWidth="205.0" text="Email" />
+                      <TableColumn fx:id="telCol" prefWidth="160.0" text="Téléphone portable" />
+                      <TableColumn fx:id="poidCol" prefWidth="78.0" text="Poid" />
+                  <TableColumn fx:id="tailleCol" prefWidth="77.0" text="Taille" />
+                  <TableColumn fx:id="sportCol" prefWidth="157.0" text="Sport" />
+                  <TableColumn fx:id="modifierCol" prefWidth="120.0" text="Modifier" />
+                  <TableColumn fx:id="supprimerCol" prefWidth="112.0" text="Supprimer" />
+                  </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#supprimerMembreClick" text="Supprimer" />
+                        <MenuItem mnemonicParsing="false" onAction="#modifierMembreClick" text="Modifier" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+              </TableView>
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="71.0" prefWidth="105.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXComboBox fx:id="comboBoxFilter" prefHeight="40.0" prefWidth="105.0">
+                     <HBox.margin>
+                        <Insets left="50.0" right="25.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="searchBarPaiement" prefHeight="46.0" prefWidth="260.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="50.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <ImageView fx:id="refreshImage" fitHeight="52.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/renew_photoshop.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+      </BorderPane>
+    </children>
+
+</AnchorPane>
